@@ -1,9 +1,14 @@
 from sqlmodel import Field
-from app.api.config.database_table import TableName
-from app.api.models.base import IntPrimaryKey, CreateAtColumn, UpdateAtColumn
+
+from app.api.config.constant import TableName
+from app.api.models.base import (
+    BigIntPrimaryKey,
+    CreateAtColumn,
+    UpdateAtColumn,
+)
 
 
-class User(IntPrimaryKey, CreateAtColumn, UpdateAtColumn, table=True):
+class User(BigIntPrimaryKey, CreateAtColumn, UpdateAtColumn, table=True):
     __tablename__ = TableName.User
 
     name: str = Field(index=True, nullable=False)
