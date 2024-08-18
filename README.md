@@ -20,3 +20,8 @@ pip install poetry
 poetry install
 poetry shell
 ```
+
+## Start
+```bash
+fastapi dev app/main.py
+```
