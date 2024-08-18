@@ -25,6 +25,7 @@ poetry shell
 ```bash
 fastapi dev app/main.py
 ```
+
 ## Project Tree
 ```
 chat-evolution-backend
@@ -33,19 +34,25 @@ chat-evolution-backend
 ├─ README.md
 ├─ app
 │  ├─ __init__.py
-│  ├─ config
-│  │  └─ __init__.py
-│  ├─ crud
-│  │  └─ __init__.py
-│  ├─ dependdencies
-│  │  └─ __init__.py
-│  ├─ main.py
-│  ├─ models
-│  │  └─ __init__.py
-│  ├─ routers
-│  │  └─ __init__.py
-│  └─ schemas
-│     └─ __init__.py
+│  ├─ api
+│  │  ├─ __init__.py
+│  │  ├─ config
+│  │  │  ├─ __init__.py
+│  │  │  └─ constant.py
+│  │  ├─ crud
+│  │  │  └─ __init__.py
+│  │  ├─ dependdencies
+│  │  │  └─ __init__.py
+│  │  ├─ models
+│  │  │  ├─ __init__.py
+│  │  │  ├─ base.py
+│  │  │  └─ user.py
+│  │  ├─ routers
+│  │  │  └─ __init__.py
+│  │  └─ schemas
+│  │     ├─ __init__.py
+│  │     └─ user.py
+│  └─ main.py
 ├─ poetry.lock
 └─ pyproject.toml
 
