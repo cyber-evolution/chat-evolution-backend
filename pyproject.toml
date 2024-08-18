@@ -5,6 +5,7 @@ description = ""
 authors = ["cyber-evolution"]
 license = "GPL3"
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.12"
