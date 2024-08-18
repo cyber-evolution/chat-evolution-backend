@@ -25,3 +25,28 @@ poetry shell
 ```bash
 fastapi dev app/main.py
 ```
+## Project Tree
+```
+chat-evolution-backend
+├─ .gitignore
+├─ LICENSE
+├─ README.md
+├─ app
+│  ├─ __init__.py
+│  ├─ config
+│  │  └─ __init__.py
+│  ├─ crud
+│  │  └─ __init__.py
+│  ├─ dependdencies
+│  │  └─ __init__.py
+│  ├─ main.py
+│  ├─ models
+│  │  └─ __init__.py
+│  ├─ routers
+│  │  └─ __init__.py
+│  └─ schemas
+│     └─ __init__.py
+├─ poetry.lock
+└─ pyproject.toml
+
+```
