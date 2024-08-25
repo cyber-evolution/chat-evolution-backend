@@ -20,3 +20,9 @@ pip install poetry
 poetry install
 poetry shell
 ```
+
++ add pre-commit-hooks
+
+```bash
+pre-commit install
+```
